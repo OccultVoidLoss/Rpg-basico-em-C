@@ -2,13 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-int vida = 3;
-void gameover (){
-    if (vida <= 0) {
-        printf("\n Voce Morreu!Tente denovo \n");
-    }
-    exit(0);
-}
+
 //função que checa se a vida chegou a zero, ou seja se o jogador morreu
 
 int main(){
@@ -19,7 +13,7 @@ int main(){
         char nome[20];
         int classe;
         int tesouro = 0;
-        
+        int vida = 3;
         
         printf("Digite seu nome: ");
         gets(nome);
@@ -192,9 +186,14 @@ int main(){
                 else if (resultadoinimigo == 2){
                     printf("O esqueleto tenta te atacar mas voce consegue desviar dele");
                 }
-                gameover();
+                if (vida <= 0) {
+                    printf("\n Voce Morreu!Tente denovo \n");
+                    exit(0);
+                }
+            
             }
         }
+    
         if (vidainimigo <= 0 && vida > 0){
             printf(" \n Voce conseguiu! \n");
         }
