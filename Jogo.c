@@ -5,8 +5,9 @@
 int vida = 3;
 void gameover (){
     if (vida <= 0) {
-        printf("\n Voce Morreu!Tente denovo");
+        printf("\n Voce Morreu!Tente denovo \n");
     }
+    exit(0);
 }
 //função que checa se a vida chegou a zero, ou seja se o jogador morreu
 
@@ -194,7 +195,7 @@ int main(){
                 gameover();
             }
         }
-        if (vidainimigo <= 0){
+        if (vidainimigo <= 0 && vida > 0){
             printf(" \n Voce conseguiu! \n");
         }
         
