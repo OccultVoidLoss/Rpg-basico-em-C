@@ -106,6 +106,7 @@ int main(){
             if (escolha3 == 2){
                 if (resultado3 == 1) {
                     printf("\n Voce foge daquele lugar amaldicoado porem os pesadelos que voce viu nunca fugirao da sua mente perturbada ");
+                    break;
                 }
                 else{
                     printf("\n Voce tenta fugir porem enquanto corre o esqueleto te ataca e consegue te acertar, fincando sua cimitarra em sua perna");
